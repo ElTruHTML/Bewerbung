@@ -1,0 +1,236 @@
+html {
+  /*font: 1rem/1 Agency FB, Arial, sans-serif;*/
+  font-family: Agency FB, Arial, sans-serif;
+  font-size: 100%;
+  background-color: Grey;
+}
+
+body {
+  display: grid;
+  margin: 1rem 15rem auto 15rem;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto auto;
+}
+header {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: rgb(15,50,127);
+  box-sizing: border-box;
+  display: flex;
+  height: 20vh;
+  border-bottom: 0.3rem solid rgb(70,70,70);
+  margin: 0;
+  z-index: 6;
+}
+p, h3, h4 {
+  color: white;
+}
+
+#bild {
+  background-color: LightGrey;
+  background-image: url(https://github.com/ElTruHTML/Bewerbung/blob/1aa4caf0e6acaea967ae646a90a57e76aa505eb4/bildBewerbung.jpg);
+  background-size: 100% 100%;
+  width: 7vw;
+  height: 15vh;
+  padding: 0;
+  margin: auto 6rem auto 8rem;
+  border-radius: 50%;
+  box-shadow: black -0.7rem 0.7rem 1rem 0.2rem inset, black 0 -0.7rem 1rem 0.1rem inset;
+}
+
+#headline {
+  height: 85%;
+  width: 50%;
+  box-sizing: border-box;
+  margin: auto 0.5rem auto 0;
+  border-right: 0.1rem solid white;
+}
+
+#headline h3 {
+  font-size: 2vmax;
+  letter-spacing: 0.25vmax;
+  font-weight: 100;
+  margin: 0.6vmax 0 0.25rem 0;
+}
+
+
+#headline hr {
+  margin: 0;
+  color: white;
+  width: 30%;
+}
+#headline p {
+  font: 1.25vmax/0.005 Agency FB, Arial, sans-serif;
+  font-weight: 50;
+  margin-top: 1.25vmax;
+}
+#kontakt {
+  box-sizing: border-box;
+  height: 85%;
+  width: 15%;
+  margin: auto 0;
+  padding-left: 0.7vmax;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  border-left: 0.04vmax solid white;
+}
+
+img[src$="handy.png"] {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+img[src$="adresse.png"] {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+img[src$="standort.png"] {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+#handyNummer {
+  font-weight: bold;
+  font-size: 0.7vmax;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 1.3vmax;
+  letter-spacing: 0.18vmax;
+
+}
+#mail {
+  font-weight: bold;
+  font-size: 0.7vmax;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-left: 1.3vmax;
+  letter-spacing: 0.18vmax;
+}
+#wohnort {
+  font-weight: bold;
+  font-size: 0.7vmax;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-left: 1.3vmax;
+  letter-spacing: 0.18vmax;
+}
+.pikto {
+  max-width: 1.35vw;
+}
+
+
+#wrapper {
+  /*hier muss nochn schatten rein*/
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  box-sizing: border-box;
+  margin: 0;
+  height: 70vh;
+  width: 15vw;
+}
+nav {
+  text-align: center;
+  box-sizing: border-box;
+  width: 84%;
+  height: 100%;
+  background-color: rgb(18,57,154);
+  z-index: 5;
+  box-shadow: black 0.3rem 0 0.9rem 0.2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 3vmax auto;
+}
+
+a {
+  border: 0.1rem solid rgba(11,36,97,0);
+  display: block;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+  margin: 3vmax auto;
+  font-size: 1.5vmax;
+  letter-spacing: 0.25vmax;
+  width: 65%;
+  padding: 0.6rem 0;
+  transition: 0.75s;
+}
+a:hover {
+border: 0.1rem solid rgb(14,43,116);
+border-radius: 0.4rem;
+letter-spacing: normal;
+background-image: linear-gradient(rgba(0,0,0,0), rgba(130,130,130,0.3) );
+}
+
+#leiste1 {
+  background-color: rgb(22,69,186);
+  height: 100%;
+  width: 4%;
+  z-index: 4;
+  box-shadow: black 0.1rem 0 0.5rem 0.2rem;
+}
+#leiste2 {
+  background-color: rgb(50,100,230);
+  height: 100%;
+  width: 4%;
+  z-index: 3;
+  box-shadow: black 0.1rem 0 0.5rem 0.2rem;
+}
+#leiste3 {
+  background-color: rgb(94,131,236);
+  height: 100%;
+  width: 4%;
+  z-index: 2;
+  box-shadow: black 0.1rem 0 0.5rem 0.2rem;
+}
+#leiste4 {
+  background-color: rgb(151,175,243);
+  height: 100%;
+  width: 4%;
+  z-index: 1;
+  box-shadow: black 0.1rem 0 0.5rem 0.2rem;
+}
+footer {
+  height: 5vh;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  z-index: 6;
+  background-color: rgb(100,100,100);
+  display: flex;
+  justify-content: center;
+  box-shadow: black 0 0 0.4rem 0.1rem inset;
+}
+article h1 {
+  color: white;
+  letter-spacing: 0.25vmax;
+  font-size: 1.7vmax;
+}
+article hr {
+  width: 70%;
+  color: white;
+  margin-left: 0;
+}
+article {
+  margin: 0;
+  background-color: rgb(50,50,50);
+  box-sizing: border-box;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 70vh;
+  width: 60vw;
+  padding: 0.5rem 2rem;
+}
+article p {
+  font: 1.3vmax/2 Agency FB, Arial, sans-serif;
+}
+
+
+footer p {
+  font: 0.8vmax/1.1 Agency FB, Arial, sans-serif;
+  color: rgb(50,50,50);
+  font-weight: bold;
+}
